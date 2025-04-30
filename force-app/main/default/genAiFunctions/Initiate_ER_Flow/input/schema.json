@@ -1,0 +1,35 @@
+{
+  "required" : [ "AccountId", "PatientName", "Symptom" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "AccountId" : {
+      "title" : "AccountId",
+      "description" : "The Id of the PatientInformation",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "AdditionalSymptoms" : {
+      "title" : "AdditionalSymptoms",
+      "description" : "The Additional Symptom value",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "PatientName" : {
+      "title" : "PatientName",
+      "description" : "The Name of the PatientInformation",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "Symptom" : {
+      "title" : "Symptom",
+      "description" : "The Symptom value provided by patient",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

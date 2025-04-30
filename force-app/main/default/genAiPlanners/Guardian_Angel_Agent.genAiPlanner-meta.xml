@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlanner xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This agent promptly provides medical check details to patients and enables caregivers to easily schedule appointments, offering crucial support in emergencies by understanding user needs and common healthcare interactions.</description>
+    <genAiFunctions>
+        <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
+    </genAiFunctions>
+    <genAiPlugins>
+        <genAiPluginName>Emergency_Services_Support</genAiPluginName>
+    </genAiPlugins>
+    <masterLabel>Guardian Angel Agent</masterLabel>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlanner>

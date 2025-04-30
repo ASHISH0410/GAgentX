@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>fOIMVWNx1n9iO+LK4tX8b3ofDn6yoqUx4LrvOXKmvic=_2</activeVersionIdentifier>
+    <description>Fetches the patient medical summary</description>
+    <developerName>Get_the_patient_medical_summary</developerName>
+    <masterLabel>Get the patient medical summary</masterLabel>
+    <templateVersions>
+        <content>Use the {!$Input:Patient_ID} and only find its relevant medical summary by using {!$EinsteinSearch:Default_Medical_Summary_Retriever_1Cx_N6r7cd15231.results}
+
+Show data in a proper visible format with patient name.
+Make sure that you show only the data related to the given {!$Input:Patient_ID} and provide a summary of the data generated,mention any details which are very critical in nature.
+
+DO NOT ADD any extra information about diagnosis of your own
+
+</content>
+        <inputs>
+            <apiName>Patient_ID</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Patient ID</masterLabel>
+            <referenceName>Input:Patient_ID</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Default_Medical_Summary_Retriever_1Cx_N6r7cd15231</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Patient_ID}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Default_Medical_Summary_Retriever_1Cx_N6r7cd15231</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>fOIMVWNx1n9iO+LK4tX8b3ofDn6yoqUx4LrvOXKmvic=_1</versionIdentifier>
+    </templateVersions>
+    <templateVersions>
+        <content>Use the {!$Input:Patient_ID} and only find its relevant medical summary by using {!$EinsteinSearch:Default_Medical_Summary_Retriever_1Cx_N6r7cd15231.results}
+
+Show data in a proper visible format with patient name.
+Make sure that you show only the data related to the given {!$Input:Patient_ID} and provide a summary of the data generated,mention any details which are very critical in nature.
+
+For data security and privacy, remove the patient name and replace with a patient identifier such as Med ID
+Please note that Med ID is of the format {P0000}
+DO NOT ADD any extra information about diagnosis of your own
+
+</content>
+        <inputs>
+            <apiName>Patient_ID</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Patient ID</masterLabel>
+            <referenceName>Input:Patient_ID</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT4OmniMini</primaryModel>
+        <status>Published</status>
+        <templateDataProviders>
+            <definition>invocable://getEinsteinRetrieverResults/Default_Medical_Summary_Retriever_1Cx_N6r7cd15231</definition>
+            <parameters>
+                <definition>primitive://String</definition>
+                <isRequired>true</isRequired>
+                <parameterName>searchText</parameterName>
+                <valueExpression>{!$Input:Patient_ID}</valueExpression>
+            </parameters>
+            <referenceName>EinsteinSearch:Default_Medical_Summary_Retriever_1Cx_N6r7cd15231</referenceName>
+        </templateDataProviders>
+        <versionIdentifier>fOIMVWNx1n9iO+LK4tX8b3ofDn6yoqUx4LrvOXKmvic=_2</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

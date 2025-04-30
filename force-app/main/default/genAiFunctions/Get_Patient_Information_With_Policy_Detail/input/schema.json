@@ -1,0 +1,14 @@
+{
+  "required" : [ "MessagingUserId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "MessagingUserId" : {
+      "title" : "MessagingUserId",
+      "description" : "The MessagingEndUserId of the MessagingSession that you would like to check for Patient.",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

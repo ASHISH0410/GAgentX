@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataStreamDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <areHeadersIncludedInFile>false</areHeadersIncludedInFile>
+    <bulkIngest>false</bulkIngest>
+    <creationType>Custom</creationType>
+    <dataConnector>UploadedFiles</dataConnector>
+    <dataConnectorType>UploadedFiles</dataConnectorType>
+    <dataPlatformDataSetItemName>CONNECTORSFRAMEWORK</dataPlatformDataSetItemName>
+    <dataSource>UPLOADEDFILES_UploadedFiles</dataSource>
+    <isLimitedToNewFiles>false</isLimitedToNewFiles>
+    <isMissingFileFailure>false</isMissingFileFailure>
+    <masterLabel>Medical Summary</masterLabel>
+    <mktDataLakeObject>Health_Data_Medical_Summarycsv__dll</mktDataLakeObject>
+    <mktDataTranObject>Health_Data_Medical_Summarycsv</mktDataTranObject>
+    <parameters>
+        <fullName>Health_Data_Medical_Summarycsv_delimiter</fullName>
+        <paramName>delimiter</paramName>
+        <value>,</value>
+    </parameters>
+    <parameters>
+        <fullName>Health_Data_Medical_Summarycsv_fileName</fullName>
+        <paramName>fileName</paramName>
+        <value>Health Data - Medical Summary.csv</value>
+    </parameters>
+    <parameters>
+        <fullName>Health_Data_Medical_Summarycsv_fileType</fullName>
+        <paramName>fileType</paramName>
+        <value>CSV</value>
+    </parameters>
+    <parameters>
+        <fullName>Health_Data_Medical_Summarycsv_importDirectory</fullName>
+        <paramName>importDirectory</paramName>
+        <value>005dL00000HmDGCQA3/2025-04-30T09:46:30.453Z</value>
+    </parameters>
+    <parameters>
+        <fullName>Health_Data_Medical_Summarycsv_parentDirectory</fullName>
+        <paramName>parentDirectory</paramName>
+        <value>s3://aws-prod2-apsouth1-cdp2-lakehouse-2/sfdrive/a360-prod2-2e83baac682149fb8ac9892e8cecd16a/flup-fileUploads/dc_file_upload</value>
+    </parameters>
+</DataStreamDefinition>

@@ -1,0 +1,21 @@
+{
+  "required" : [ "CaseId" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "AdditionalSymptom" : {
+      "title" : "AdditionalSymptom",
+      "description" : "The Additional Symptom",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "CaseId" : {
+      "title" : "CaseId",
+      "description" : "The ERCaseRecordId",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Initiate ER Process Flow and Create Cases when PatientInformation is available and Ambulance dispatch has been confirmed and Symptoms are there and MedicalInformations are also fetched</description>
+    <invocationTarget>Initiate_ER_Flow</invocationTarget>
+    <invocationTargetType>flow</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <masterLabel>Initiate ER Flow</masterLabel>
+</GenAiFunction>
